@@ -1,3 +1,4 @@
+
 plugins {
     id 'java'
     id 'org.springframework.boot'
@@ -23,7 +24,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    //amqp
+    // amqp
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -43,6 +44,9 @@ dependencies {
     runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
     runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
 
+    // jsp
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'javax.servlet:jstl'
 }
 
 test {
